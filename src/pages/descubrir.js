@@ -1,7 +1,7 @@
 import React from "react";
 
-function descubrir() {
+function Descubrir() {
   return <div>descubrir</div>;
 }
 
-export default descubrir;
+export default Descubrir;

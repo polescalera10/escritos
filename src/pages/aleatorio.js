@@ -1,7 +1,7 @@
 import React from "react";
 
-function aleatorio() {
+function Aleatorio() {
   return <div>aleatorio</div>;
 }
 
-export default aleatorio;
+export default Aleatorio;
