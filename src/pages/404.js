@@ -7,17 +7,17 @@ function Custom404() {
       <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-start h-screen md:px-8">
         <div className="max-w-lg mx-auto space-y-3 text-center">
           <h3 className="text-white text-4xl font-semibold sm:text-5xl">
-            Page not found
+            No hemos encontrado lo que buscas
           </h3>
           <p className="text-white">
-            Sorry, the page you are looking for could not be found or has been
-            removed.
+            Lo sentimos, no encontramos lo que buscas. Vuelve a intentarlo de
+            nuevo.
           </p>
           <Link
             href="/"
             className="text-indigo-600 duration-150 hover:text-indigo-400 font-medium inline-flex items-center gap-x-1"
           >
-            Go back
+            Ir a Inicio
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"

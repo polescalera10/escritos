@@ -5,44 +5,34 @@ function Footer() {
   const footerNavs = [
     {
       href: "/",
-      name: "About",
+      name: "Inicio",
     },
     {
-      href: "/",
-      name: "Blog",
+      href: "/descubrir",
+      name: "Descubrir",
     },
     {
-      href: "/",
-      name: "",
+      href: "/aleatorio",
+      name: "Aleatorio",
     },
     {
-      href: "/",
-      name: "Team",
-    },
-    {
-      href: "/",
-      name: "Careers",
-    },
-
-    {
-      href: "/",
-      name: "Suuport",
+      href: "/politica-privacidad",
+      name: "Política de Privacidad y Cookies",
     },
   ];
 
   return (
     <footer className="text-white px-4 py-5 max-w-screen-xl mx-auto md:px-8">
-      <div className="max-w-lg sm:mx-auto sm:text-center">
-        Escritos
+      <div className="max-w-lg sm:mx-auto sm:text-center ">
+        <p className="text-indigo-500 text-2xl font-extrabold">Escritos</p>
         <p className="leading-relaxed mt-2 text-[15px]">
-          Lorem Ipsum has been the industry standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it
-          to make a type specimen book.
+          Atrévete a escribir sin límites y comparte tus ideas con el mundo, en
+          un espacio seguro y acogedor donde todos somos cómplices creativos.
         </p>
       </div>
       <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
         {footerNavs.map((item, idx) => (
-          <li key={`footer-item-${idx}`} className=" hover:text-gray-800">
+          <li key={`footer-item-${idx}`} className=" hover:text-[#E114E5]">
             <Link key={idx} href={item.href}>
               {item.name}
             </Link>
@@ -51,7 +41,7 @@ function Footer() {
       </ul>
       <div className="mt-8 items-center justify-between sm:flex">
         <div className="mt-4 sm:mt-0">
-          &copy; 2022 Float UI All rights reserved.
+          &copy; {new Date().getFullYear()} Escritos All rights reserved.
         </div>
         {/* <div className="mt-6 sm:mt-0">
           <ul className="flex items-center space-x-4">
