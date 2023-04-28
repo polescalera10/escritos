@@ -10,12 +10,13 @@ function politicaPrivacidad() {
         Última actualización: 1 de Enero de {new Date().getFullYear()}
       </p>
       <p>
-        Bienvenido a www.escritos.com ("Escritos" o "nosotros" o "nuestro" o "la
-        web"), una plataforma en línea que permite a los usuarios subir y
-        compartir textos anónimos. Su privacidad es muy importante para
-        nosotros, y esta Política de Privacidad y Cookies ("Política") tiene
-        como objetivo informarle sobre cómo recopilamos, utilizamos y protegemos
-        su información personal, así como las cookies que utilizamos en la web.
+        Bienvenido a www.escritos.com (&quot;Escritos&quot; o
+        &quot;nosotros&quot; o &quot;nuestro&quot; o &quot;la web&quot;), una
+        plataforma en línea que permite a los usuarios subir y compartir textos
+        anónimos. Su privacidad es muy importante para nosotros, y esta Política
+        de Privacidad y Cookies (&quot;Política&quot;) tiene como objetivo
+        informarle sobre cómo recopilamos, utilizamos y protegemos su
+        información personal, así como las cookies que utilizamos en la web.
       </p>
       <p>
         Al acceder o utilizar Escritos, acepta y se compromete a cumplir con
