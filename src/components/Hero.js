@@ -2,7 +2,7 @@ import React from "react";
 import Editor from "./Editor";
 import Link from "next/link";
 
-function Hero() {
+function Hero({ securityNumber }) {
   return (
     <section>
       <div className="py-28 gap-12 text-white md:px-8">
@@ -37,7 +37,7 @@ function Hero() {
           </div>
         </div>
         <div className="mt-14">
-          <Editor />
+          <Editor securityNumber={securityNumber} />
         </div>
       </div>
     </section>

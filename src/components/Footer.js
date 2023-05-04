@@ -24,7 +24,7 @@ function Footer() {
   return (
     <footer className="text-white px-4 py-5 max-w-screen-xl mx-auto md:px-8">
       <div className="max-w-lg sm:mx-auto sm:text-center ">
-        <p className="text-indigo-500 text-2xl font-extrabold">Escritos</p>
+        <p className="text-indigo-500 text-2xl font-extrabold">SinAutores</p>
         <p className="leading-relaxed mt-2 text-[15px]">
           Atrévete a escribir sin límites y comparte tus ideas con el mundo, en
           un espacio seguro y acogedor donde todos somos cómplices creativos.
@@ -41,7 +41,8 @@ function Footer() {
       </ul>
       <div className="mt-8 items-center justify-between sm:flex">
         <div className="mt-4 sm:mt-0">
-          &copy; {new Date().getFullYear()} Escritos All rights reserved.
+          &copy; {new Date().getFullYear()} SinAutores Todos los derechos
+          reservados.
         </div>
         {/* <div className="mt-6 sm:mt-0">
           <ul className="flex items-center space-x-4">

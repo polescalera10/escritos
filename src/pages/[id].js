@@ -8,12 +8,12 @@ function Aleatorio({ text, error }) {
     text && (
       <>
         <Head>
-          <title>Descubre un héroe anónimo</title>
+          <title>Descubre un héroe anónimo - SinAutores.com</title>
         </Head>
         <div className="my-8">
-          <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
-            <span class="block">Descubre un héroe anónimo</span>
-            <span class="block text-indigo-500">
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+            <span className="block">Descubre un héroe anónimo</span>
+            <span className="block text-indigo-500">
               Escritores anónimos quieren llegar a ti
             </span>
           </h2>
