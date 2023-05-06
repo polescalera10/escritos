@@ -138,7 +138,7 @@ function politicaPrivacidad() {
           personal que tenemos sobre usted. También tiene derecho a oponerse al
           tratamiento de sus datos personales, en ciertos casos. Para ejercer
           estos derechos o si tiene alguna pregunta sobre esta Política, puede
-          ponerse en contacto con nosotros en [correo electrónico de contacto].
+          ponerse en contacto con nosotros en hola@sinautores.com.
         </p>
 
         <h2 className="text-2xl">
@@ -176,10 +176,10 @@ function politicaPrivacidad() {
         <p>
           Si tiene alguna pregunta o inquietud sobre esta Política de Privacidad
           y Cookies o nuestras prácticas de privacidad, no dude en ponerse en
-          contacto con nosotros en [correo electrónico de contacto]. Estamos
-          comprometidos a trabajar con usted para resolver cualquier inquietud
-          que pueda tener con respecto a nuestra recopilación, uso y divulgación
-          de su información personal.
+          contacto con nosotros en hola@sinautores.com. Estamos comprometidos a
+          trabajar con usted para resolver cualquier inquietud que pueda tener
+          con respecto a nuestra recopilación, uso y divulgación de su
+          información personal.
         </p>
       </div>
     </>
