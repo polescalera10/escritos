@@ -8,9 +8,11 @@ import Popup from "./Popup";
 import CustomButton from "./CustomButton";
 import PopupForm from "./PopupForm";
 
+const EMPTY_FORM = { securityNumber: "", email: "" };
+
 function Editor({ securityNumber }) {
   const [value, setValue] = useState("");
-  const [form, setForm] = useState({ securityNumber: "", email: "" });
+  const [form, setForm] = useState(EMPTY_FORM);
   const [showSnippet, setShowSnippet] = useState(false);
 
   const handleSubmit = async () => {
@@ -45,6 +47,7 @@ function Editor({ securityNumber }) {
       });
       setShowSnippet(false);
       setValue("");
+      setForm(EMPTY_FORM);
     } else {
       setShowSnippet(false);
       toast.error("Ups! Ha ocurrido un error", { duration: 4000 });

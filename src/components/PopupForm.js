@@ -8,13 +8,13 @@ const PopupForm = ({ securityNumber, setForm, form }) => {
     <div className="rounded-t-lg p-8 bg-white shadow text-black">
       <div className="my-8">
         <h2 className="text-xl block text-indigo-500">
-          Rellena el formulario para enviar tu texto
+          Rellena el formulario para enviar tu escrito
         </h2>
       </div>
 
       <div className="flex flex-col my-4">
         <label htmlFor="name-with-label" className="text-gray-700 mb-4">
-          Escribe el siguiente numero: {securityNumber}
+          Escribe el siguiente número: {securityNumber}
         </label>
         <input
           type="text"
@@ -27,7 +27,7 @@ const PopupForm = ({ securityNumber, setForm, form }) => {
 
       <div className="flex flex-col relative ">
         <label htmlFor="name-with-label" className="text-gray-700 mb-4">
-          Deja tu correo para saber donde has guardado tu texto
+          Deja tu correo para saber donde has guardado tu escrito
         </label>
         <div className="flex">
           <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-indigo-300 text-indigo-500 shadow-sm text-sm">

@@ -1,6 +1,7 @@
 import React from "react";
 import { supabase } from "@/libs/supabase";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 function Aleatorio({ text, error }) {
   if (error) useRouter.push("/404");
