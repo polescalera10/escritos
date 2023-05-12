@@ -1,19 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { createServerSupabaseClient } from "@supabase/auth-helpers-nextjs";
 import { supabase } from "@/libs/supabase";
 import { useRouter } from "next/router";
 import { toast } from "react-hot-toast";
-import { useUser } from "@supabase/auth-helpers-react";
+import { sendEmail } from "@/libs/api";
 
 function Vote({ text, error }) {
   const router = useRouter();
-  const user = useUser();
+  const [currentText, setCurrentText] = useState(0);
 
   useEffect(() => {
-    if (!user) router.push("/login");
     if (error) router.push("/404");
-  }, [error, router, user]);
+  }, [error, router]);
 
   const handleAccept = async (id) => {
     const { error } = await supabase
@@ -25,12 +24,14 @@ function Vote({ text, error }) {
       return toast.error("No se ha podido aprobar la solicitud");
     }
 
+    await sendEmail(text[currentText]);
     toast.success("Aprobado");
-    router.reload();
+    setCurrentText(currentText + 1);
   };
 
   const handleDeny = () => {
-    router.reload();
+    toast.success("Denegado");
+    setCurrentText(currentText + 1);
   };
 
   return (
@@ -47,12 +48,12 @@ function Vote({ text, error }) {
         </h2>
       </div>
       <div className="m-auto overflow-hidden  shadow-lg w-full">
-        {text ? (
+        {text[currentText] ? (
           <>
             <div
               className="w-full p-4 bg-white rounded-lg"
               dangerouslySetInnerHTML={{
-                __html: text.body,
+                __html: text[currentText].body,
               }}
             />
             <div className="sm:flex block pt-2 sm:space-x-2 space-y-2 sm:space-y-0">
@@ -65,7 +66,7 @@ function Vote({ text, error }) {
               </button>
               <button
                 type="button"
-                onClick={() => handleAccept(text.id)}
+                onClick={() => handleAccept(text[currentText].id)}
                 className={`rounded-lg py-2 w-full px-4 flex justify-center items-center bg-green-500 text-white text-center text-base font-semibold shadow-md`}
               >
                 Aceptar
@@ -102,12 +103,11 @@ export async function getServerSideProps(ctx) {
   const { data: text, error } = await supabase
     .from("random_texts")
     .select("*")
-    .eq("published", false)
-    .limit(1);
+    .eq("published", false);
 
   return {
     props: {
-      text: text[0] || null,
+      text: text || null,
       error,
     },
   };
