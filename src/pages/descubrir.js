@@ -26,7 +26,7 @@ function Descubrir({ texts, error }) {
             return (
               <div
                 key={text.id}
-                className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80"
+                className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-full"
               >
                 <Link href={`/${text.id}`} className="block w-full h-full">
                   <div

@@ -22,7 +22,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="text-white px-4 py-5 max-w-screen-xl mx-auto md:px-8">
+    <footer className="text-white my-8 max-w-screen-xl mx-auto">
       <div className="max-w-lg sm:mx-auto sm:text-center ">
         <p className="text-indigo-500 text-2xl font-extrabold">SinAutores</p>
         <p className="leading-relaxed mt-2 text-[15px]">
