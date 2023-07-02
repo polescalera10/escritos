@@ -17,7 +17,7 @@ export default function Home({ securityNumber }) {
         />
       </Head>
       <Hero securityNumber={securityNumber} />
-      <Features />
+      {/* <Features /> */}
     </>
   );
 }
